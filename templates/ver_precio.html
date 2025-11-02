@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios de Lugares Turísticos de China</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos2.css') }}">
+</head>
+<body>
+    <div class="fondo-animado"></div>
+    <nav class="navb">
+            <li><a href="{{ url_for('index') }}" >Inicio</a></li>
+            <li><a href="{{ url_for('precios_viajes') }}">Precios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+    </nav>
+    <h1 id="precios"> Precios de Lugares Turísticos en China</h1>
+    <table>
+        <tr>
+            <th>Lugar</th>
+            <th>Cuidad</th>
+            <th>Precio de paquete (DOLARES)</th>
+        </tr>
+        <tr>
+            <td>Gran Muralla China</td>
+            <td>Beijing</td>
+            <td>
+                <div class="precio-info"><span>30$ - 50$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Cuidad Prohibida</td>
+            <td>Beijing/ Pekín</td>
+            <td>
+                <div class="precio-info"><span>40$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+        <td>Ejercito de Terracota</td>
+        <td>Xian</td>
+        <td>
+            <div class="precio-info"><span>20$ - 48$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Río Li (Crucero)</td>
+            <td>Guillin</td>
+            <td>
+                <div class="precio-info"><span>90$ - 115$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Ciqikou</td>
+            <td>Chongqing</td>
+            <td>
+                <div class="precio-info"><span>56$ - 60$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Templo del cielo</td>
+            <td>Pekín</td>
+            <td>
+                <div class="precio-info"><span>40$ - 60$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Jardín Yuyuan</td>
+            <td>Shanghai</td>
+            <td>
+                <div class="precio-info"><span>30$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        <tr>
+            <td>Montaña Tianmen</td>
+            <td>Zhangjiajie</td>
+            <td>
+                <div class="precio-info"><span>55$</span> <a href="{{ url_for('precios_viajes') }}"><button class="boton-comprar">Comprar</button></div> </td></a>
+        </tr>
+        </table>
+        <h2 style="text-align: center; margin-top: 40px;" id="galeria">Galeria de Lugares</h2>
+        <div class="galeria">
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/murallachina.jpg') }}" alt="GRAN MURALLA CHINA">
+                <div class="info-overlay"> <h3> La Gran Muralla</h3> <p>Una de las mayores obras de ingeniería del mundo.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/cuidadprohibida.jpg') }}"  alt="LA CUIDAD PROHIBIDA">
+            <div class="info-overlay"> <h3>Cuidad Prohibida</h3> <p>Antiguo palacio imperial chinoo y el más grande del mundo.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/guerrerosdeterracota.jpg') }}" alt="Ejercito de Terracota">
+            <div class="info-overlay"> <h3>Guerreros de Terracota</h3> <p>El impresionante ejército de terracota del emperador Qin Shi Huang.</p></div></div>   
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/rioLi.jpg') }}" alt="Río LI">
+            <div class="info-overlay"> <h3>Río Li</h3> <p>Destacado afluente de la cuenca del río de las Perlas.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/puebloantiguociqikou.jpg') }}" alt="Ciqikou">
+            <div class="info-overlay"> <h3>Antiguo Pueblo Ciquikou</h3> <p>Vistas impresionantes de la metrópolis, donde los ríos se encuentran.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/templo_cielo.jpg') }}" alt="Templo del Cielo">
+            <div class="info-overlay"> <h3>Templo del Cielo</h3> <p>Un complejo de edificios religiosos imperiales en el sur de Pekín.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/jardin.jpg') }}" alt="Jardín Yuyuan">
+            <div class="info-overlay"><h3>Jardín Yuyuan</h3><p>Un clásico Jarfín chino en el centro de Shanghái.</p></div></div>
+
+            <div class="imagen-galeria-item"><img src="{{ url_for('static', filename='imagenes/tianmen.jpg') }}" alt="Montaña Tianmen">
+            <div class="info-overlay"><h3>Montaña Tianmen</h3><p>Famosa por su carretera serpenteante y la Cueva del Cielo.</p></div></div>
+            </div>
+</body>
+</html>

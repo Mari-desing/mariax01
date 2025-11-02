@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datos del contacto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleformu.css') }}" />
+</head>
+<body>
+
+    <h1>¡Datos enviados correctamente, {{ nombre }}! </h1>
+    <p>Hemos recibido la siente información, en caso de ser incorrecta mande otra de nuevo</p>
+
+    <div class="tabla-container">
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Información</th>
+            </tr>
+            <tr>
+                <td><strong>Nombre</strong></td>
+                <td>{{ nombre }}</td>
+            </tr>
+            <tr>
+                <td><strong>Correo electrónico</strong></td>
+                <td>{{ correo }}</td>
+            </tr>
+            <tr>
+                <td><strong>Asunto</strong></td>
+                <td>{{ asunto }}</td>
+            </tr>
+            <tr>
+                <td><strong>Mensaje</strong></td>
+                <td>{{ mensaje }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="boton-volver">← Volver al inicio</a>
+
+</body>
+</html>

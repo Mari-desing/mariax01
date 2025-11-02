@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura del viaje</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilosfactu.css') }}">
+</head>
+<body>
+
+<nav class="navtop">
+    <a href="{{ url_for('index') }}">Inicio</a>
+    <a href="{{ url_for('ver_precio') }}">Precios</a> 
+    <a href="{{ url_for('contacto') }}">Contacto</a>
+</nav>
+
+<div class="factura">
+    <h2>Factura de Compra</h2>
+    <p class="numero-factura"><strong>{{ numero_factura }}</strong></p>
+    <p><strong>Cliente:</strong> {{ nombre }}</p>
+    <p><strong>Correo electrónico:</strong> {{ correo }}</p>
+    <p><strong>Destino elegido:</strong> {{ paquete }}</p>
+    <p><strong>Precio estimado:</strong> {{ precio }}</p>
+    <p><strong>Fecha de emisión:</strong> {{ fecha }}</p>
+
+    <hr>
+    <p class="mensaje-final">
+        Gracias por confiar en nosotros. Pronto recibirá un correo con los detalles del viaje.  BIENVENIDO A CHINA
+    </p>
+
+    <a href="{{ url_for('index') }}" class="boton-volver">Volver al inicio</a>
+</div>
+
+</body>
+</html>

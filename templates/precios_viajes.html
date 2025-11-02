@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes disponibles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos4.css') }}">
+
+</head>
+<body>
+
+<nav class="navtop">
+    <a href="{{ url_for('index') }}">Inicio</a>
+    <a href="{{ url_for('ver_precio') }}">Precios</a> 
+    <a href="{{ url_for('contacto') }}">Contacto</a>
+</nav>
+    <h3>Comprar viaje</h3>
+    <form class="formulario" action="{{ url_for('confirmacion') }}" method="get">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text"  id="nombre" name="nombre" required><br><br>
+    <label for="correo">Correo Electrónico:</label><br>
+    <input type="email" name="correo" id="correo" required>
+    <label for="paquete">Seleccione</label>
+    <select name="paquete" id="paquete">Seleccione Paquete:</label><br>
+    <option value="muralla">Gran Muralla China</option>
+    <option value="prohibida">Cuidad Prohibida</option>
+    <option value="terracota">Ejercito de Terracota</option>
+    <option value="crucero">Río Li</option>
+    <option value="ciqikou">Ciqikou</option>
+    <option value="templo cielo">Templo del Cielo</option>
+    <option value="jardin">Jardín Yuyuan</option>
+    <option value="montaña">Montaña Tianmen</option>
+    </select><br><br>
+    <a href="{{ url_for('index') }}"></a>
+    <input type="submit" value="Comprar"></form>
+</body>   
+</html>

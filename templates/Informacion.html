@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Info.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+    <a href="{{ url_for('index') }}" >Inicio</a>
+    <a href="{{ url_for('ver_precio') }} "  >Precios</a> 
+    <a href="{{ url_for('contacto') }}"  >Contacto</a>
+</nav>
+<main>
+    <h1>Descubre China</h1>
+    <p> Bienvenido a tu guia para explorar uno de los mejores paises turisticos y fascinantes del mundo: China.</p>
+    
+</main>
+<section class="info">
+    <h2>Cultura y Tradiciones</h2>
+    <p>China tiene una historia de más de 5000 años. Su cultura incluye festivales tradicionales como el Año Nuevo Chino <br>
+    la Ópera de Pekín, la caligrafía y una rica gastronomía que varía según la región.</p> </br>
+    <video width="600" controls>
+    <source src="{{ url_for('static', filename='imagenes/China.mp4') }}" type="video/mp4">
+</video>
+
+    
+    <h2> Lugares Turísticos</h2>
+    <ul>
+        <li> La Gran Muralla China</li>
+        <li>La Cuidad Prohibida en Pekín</li>
+        <li> Los Guerros de Terracota</li>
+        <li>El Río Li</li>
+    </ul>
+    <h2> Gastronomía</h2>
+    <p>Desde el pato laqueado de Pekín <br>
+        hasta los dim sum cantoneses, la cocina <br>
+        china ofrece una variedad de sabores intensos, con ingredientes <br>
+        únicos como tofu, bambú, jengibre y salsa de soja.</p>
+</section>
+    <footer>
+        <p>&copy; 2025 Viajes China. Todos los derechos reservados y respetos.</p>
+    </footer>
+</body>
+</html>

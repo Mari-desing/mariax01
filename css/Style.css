@@ -1,0 +1,46 @@
+body, html{
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagenes/china.jpg) center center; 
+    background-size: cover;
+}
+.contenedor{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(194, 198, 214);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(22, 102, 22);
+}
+
+.boton-redireccion{
+    background-color: rgb(15, 226, 43);
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.boton-redireccion {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20); /* verde moderno */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* transición suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.boton-redireccion:hover {
+    background: linear-gradient(135deg, #30b430, #1f7a1f); /* verde vibrante */
+    transform: translateY(-3px); /* levanta el botón al pasar el cursor */
+    box-shadow: 0 10px 25px rgba(48, 180, 48, 0.5); /* sombra de color */
+    color: #fff;
+}
+

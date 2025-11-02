@@ -1,0 +1,119 @@
+/* --- Estilo global --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #030d3a; /* fondo oscuro */
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    transition: background 0.3s ease;
+}
+
+/* --- Navbar superior --- */
+.navtop {
+    background-color: #14291f;
+    padding: 15px 20px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navtop a {
+    color: #ddd;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navtop a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #0116ff;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navtop a:hover {
+    color: #158f40;
+}
+
+.navtop a:hover::after {
+    width: 100%;
+}
+
+/* --- Tarjeta de factura --- */
+.factura {
+    background-color: #0d0d50; /* fondo oscuro de tarjeta */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.factura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+}
+
+.factura h2 {
+    text-align: center;
+    color: #10561c;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.numero-factura {
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.factura p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.factura hr {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #000000;
+}
+
+.mensaje-final {
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* --- Botón volver centrado --- */
+.boton-volver {
+    display: block;
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1f1f2e, #3a3a4f);
+    color: #001aff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;   
+    width: fit-content;
+}
+
+.boton-volver:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    background: linear-gradient(135deg, #1e1e27, #000000);
+    color: #0d6e1d;
+}

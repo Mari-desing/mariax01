@@ -1,0 +1,77 @@
+body {
+    font-family:  'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #f8c9c9;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #2c2c2c;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 110px;
+    text-align: center;
+    height: 40vh;
+    background-image: url(../imagenes/china3.jpg);
+    background-size: cover;
+    font-size: 27px;
+}
+
+.info {
+    background-color: #fbe9e7;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.info h2 {
+    color: #000000; 
+}
+
+footer {
+    background-color: #000000;
+    color:white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+/*video*/ 
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin: 40px ;
+}
+video {
+    border: 4px solid #0e0a0a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(211, 207, 0, 0.959);
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylescon.css') }}">
+    
+
+</head>
+
+<body>
+    {% for datos in info%} <Se  crea un ciclo que recibe los datos>
+    <table border="1"> <Se crea una tabla>
+        <tr>
+           <td> {{ datos.nombre_completo}} </td>
+           <td> {{ datos.correo_electronico}} </td>
+           <td> {{ datos.asunto}} </td>
+           <td> {{ datos.mensaje}} </td>
+        </tr>
+    </table>
+    {% endfor %} 
+     
+    <div class="container">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes alguna duda o sugerencia? Escríbenos.</p>
+
+   <form class="formulario-contacto" method="POST" action="{{ url_for('formu') }}">
+    <label for="name">Nombre completo</label>
+    <input type="text" name="nombre_completo" id="name" placeholder="Nombre"/>
+    <label for="email">Correo electrónico</label>
+    <input type="email" name="correo_electronico" id="email" placeholder="Correo Electronico"/>
+    <label for="asunto">Asunto</label>
+    <input type="text" id="asunto" name="asunto" placeholder="Asunto" />
+    <label for="message">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+     href="/data/viajes.db"> <button type="submit">Enviar</button>
+</form>
+
+   
+
+
+
+    
+    </form>
+        
+    <div class="volver-wrapper"><a href="{{ url_for('index') }}" class="volver-inicio">Volver al inicio</a></div>
+</body>
+</html>
